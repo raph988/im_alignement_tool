@@ -1,0 +1,1 @@
+pyinstaller --add-data "realign.ui";. --hidden-import PySide.QtXml differentiel.py
