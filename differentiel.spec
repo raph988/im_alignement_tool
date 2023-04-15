@@ -4,26 +4,23 @@ block_cipher = None
 
 
 a = Analysis(['differentiel.py'],
-             pathex=['C:\\Users\\raphael abele\\Documents\\Mathieu LISART'],
+             pathex=['D:\\Python Scripts\\imTools\\ImAlign'],
              binaries=[],
-             datas=[('C:/Users/raphael abele/Documents/Qt/Realign_IHM/realign.ui', '.')],
+             datas=[('realign.ui', '.')],
              hiddenimports=['PySide.QtXml'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
-             cipher=block_cipher,
-             noarchive=False)
+             cipher=block_cipher)
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
-          [],
           exclude_binaries=True,
           name='differentiel',
           debug=False,
-          bootloader_ignore_signals=False,
           strip=False,
           upx=True,
           console=True )
